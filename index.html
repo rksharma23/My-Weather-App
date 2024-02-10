@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="outerContainer">
+        <div class="innerContainer">
+
+            <div class="search_section">
+                <input type="search" placeholder="Enter City" class="input" id="input">
+                <img src="search_icon.png" id="search_button">
+            </div>
+
+
+            <div class="cityName">
+                <h1 id="cityTitle">Enter City Name</h1>
+            </div>
+
+
+            <div class="weather">
+                <img src="partially_cloudy.png" alt="partially_cloudy" class="weather_img" id="weather_img">
+            </div>
+
+
+            <div class="temp">
+                <h1 id="temp">27°C</h1>
+            </div>
+
+
+            <div class="status">
+                <h1 id="status">Cloudy</h1>
+            </div>
+
+
+            <div class="boxContainer">
+
+                <div class="innerBoxes">
+                    <div class="sunrise small_sections ">
+                        <img src="sunny_icon.png" alt="sunrise" class="icons">
+                        <div>
+                            <h3 class="title">Sunrise</h3>
+                            <h4 class="value" id="sunrise">5:34 AM</h4>
+                        </div>
+                    </div>
+                    <div class="sunset small_sections ">
+                        <img src="sunset_icon.png" alt="Sunset" class="icons">
+                        <div>
+                            <h3 class="title">Sunset</h3>
+                            <h4 class="value" id="sunset">6:34 PM</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- aqi in variables here means for wind speed here, as updated later!!! -->
+                <div class="innerBoxes">
+                    <div class="aqi small_sections">
+                        <img src="wind_icon.png" alt="AQI" class="icons" id="windspeedIcon">
+                        <div>
+                            <h3 class="title">Wind Speed</h3>
+                            <h4 class="value" id="aqi" style="text-align: center;">60 km/hr</h4>
+                        </div>
+                    </div>
+                    <div class="humidity small_sections ">
+                        <img src="humidity_icon.png" alt="Humidity" class="icons">
+                        <div>
+                            <h3 class="title">Humidity</h3>
+                            <h4 class="value" id="humidity" style="text-align: center;">87%</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- precipitation in variables here means for minimum tempreature, as updated later !!! -->
+                <div class="innerBoxes" id="innerBox3">
+                    <div class="precipitation small_sections ">
+                        <img src="mintemp.png" alt="rain" class="icons">
+                        <div>
+                            <h3 class="title">Minimum</h3>
+                            <h4 class="value" id="precipitation" style="text-align: center;">13°C</h4>
+                        </div>
+                    </div>
+                    <div class="rain small_sections ">
+                        <img src="pressure_6801594.png" alt="Rain" class="icons">
+                        <div>
+                            <h3 class="title">Pressure</h3>
+                            <h4 class="value" id="pressure" style="text-align: center;">34 hPa</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
